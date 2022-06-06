@@ -1,38 +1,127 @@
-.App {
-  text-align: center;
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App{
+  position: relative;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.form-buttom{
+  position: absolute;
+  right: 170px;
+  background-color: rgba(0, 0, 255, 0.778);
+  border: none;
+  padding: 0.3rem 0.3rem 0.3rem 1rem;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, .3);
+  color: #FFFFFF;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h1{
+  position: absolute;
+  left: 6.5%;
 }
 
-.App-link {
-  color: #61dafb;
+.overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  backdrop-filter: blur(4px);
+  z-index: 2;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Modal{
+  background: #FFFFFF;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, .3);
+  padding: 10px;
+  border-radius: 10px;
+  width: 500px;
+  position: absolute;
+  z-index: 5;
+  margin-left: 35%;
+  margin-top: 10%;
+} 
+
+ul{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  list-style: none;
+  gap: 1rem;
+  padding: 6rem;
+  margin-top: 4rem;
+}
+
+li{
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 6px;
+  width: 250px;
+  position: relative;
+}
+
+.buttoms-containers{
+  margin-left: 160px;
+}
+
+.div-buttom-delete{
+  background-color: red;
+  border-radius: .5rem;
+}
+
+.div-buttom-edit{
+  background-color: #FFFFFF;
+}
+
+.delete-buttom{
+  padding: .3rem;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+
+.edit-buttom{
+  padding: .3rem;
+  font-size: 16px;
+  color: blue;
+}
+
+.buttoms{
+  border: none;
+  margin-left: .4rem;
+}
+
+.close-buttom{
+  position: absolute;
+  right: 1rem;
+  border: none;
+  font-size: 16px;
+  background-color: #FFFFFF;
+}
+
+form{
+  margin-top: 4rem;
+  margin-left: 1.5rem;
+}
+
+.form-buttoms{
+  margin-top: .5rem;
+}
+
+.submit-buttom{
+  border: none;
+  padding: .3rem;
+  color: #FFFFFF;
+  background-color: blue;
+  border-radius: 0.3rem;
+}
+
+.cancel-buttom{
+  border: none;
+  padding: .3rem;
+  color: #FFFFFF;
+  background-color: blue;
+  border-radius: 0.3rem;
+  margin-left: .2rem;
 }
